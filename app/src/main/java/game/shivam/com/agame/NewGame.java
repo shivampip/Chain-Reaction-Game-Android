@@ -217,7 +217,7 @@ public class NewGame extends AppCompatActivity implements View.OnClickListener{
                 }
             }
         }
-        else {//if isRes==true
+        else {//isRes==true
             if(bb[i][j]=='n'){
                 aa[i][j]=1;
                 bb[i][j]=source;
