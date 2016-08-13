@@ -2,10 +2,19 @@
     <string name="app_name">A Game</string>
 
     <string name="instruction">
-        It is a very simple game.\n
-        Just click on and dot it will split into four dots and will make neghourhood four dots
-        with same color.
-    </string>
+        \n\n\n
+        Chain Reaction is a strategy game for 2 players in which you must take control of board by eliminating your opponents atoms.Players take it in turns to place their colored atoms in a cell.
+
+Corner cells can accommodate maximum of one atom . 
+
+Edge/side cells can accommodate maximum of two atoms.
+
+Other cells can accommodate maximum of three atoms.
+
+If you try to insert an extra atom than capacity of cell,it explodes giving adjacent cells one atom each and color of adjacent cell atoms will be changed to yours.If adjacent cells are already full then they will in turn explode and chain reaction will continue until all cells are stable.
+
+A player may only place their atoms in a empty cell or a cell that contains atoms of their own color. As.As soon as a player looses all their colored atoms they are out of the game.
+    \n\n</string>
 
 
     <string name="about">

@@ -14,6 +14,7 @@
         <item name="android:textColor">@color/title</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">@dimen/titlePad</item>
+        <item name="android:layout_margin">@dimen/titleMar</item>
     </style>
 
     <style name="button">

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void howToPlay(View view){
-        Intent i= new Intent(this, GameCat.class);
+        Intent i= new Intent(this, Instruction.class);
         this.startActivity(i);
     }
 

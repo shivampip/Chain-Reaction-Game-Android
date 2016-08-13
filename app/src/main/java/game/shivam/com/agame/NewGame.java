@@ -1,5 +1,6 @@
 package game.shivam.com.agame;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +18,7 @@ public class NewGame extends AppCompatActivity implements View.OnClickListener{
     Button a[][]=new Button[number][number];
     int aa[][]=new int[number][number];
     char bb[][]=new char[number][number];
+    int turn=0;
 
     Resources rs;
     int dcol;
@@ -187,7 +189,9 @@ public class NewGame extends AppCompatActivity implements View.OnClickListener{
             for(int k=0;k<number;k++){
                 if(b==a[i][k]){
                     try{
+                        turn++;
                         chal(i,k,fsource,false);
+                        isWon();
                         fsource=(fsource=='g')?'r':'g';
                     }catch (Exception e){display(e+"");}
                 }
@@ -222,6 +226,7 @@ public class NewGame extends AppCompatActivity implements View.OnClickListener{
                 if(bb[i][j]!=source){
                     display("Invalid move");
                     fsource=(fsource=='g')?'r':'g';
+                    turn--;
                 }
                 else {
                     if(aa[i][j]<pos){
@@ -279,23 +284,33 @@ public class NewGame extends AppCompatActivity implements View.OnClickListener{
     private void isWon(){
         boolean gWon=true;
         boolean rWon=true;
-        for(int i=0;i<number;i++){
-            for(int k=0;k<number;k++){
-                if(bb[i][k]=='r'){
-                    gWon=false;
-                }
-                else if (bb[i][k]=='g'){
-                    rWon=false;
+        if(turn>2){
+            for(int i=0;i<number;i++) {
+                for (int k = 0; k < number; k++) {
+                    if (bb[i][k] == 'r') {
+                        gWon = false;
+                    } else if (bb[i][k] == 'g') {
+                        rWon = false;
+                    }
                 }
             }
             if(gWon){
-                //transfer to Winning intent
+                display("Green Won");
+                Intent i= new Intent(this, Winner.class);
+                i.putExtra("who","green");
+                i.putExtra("turn",turn);
+                this.startActivity(i);
             }
             else if(rWon){
-                //transfer to Winning intent
+                display("Red Won");
+                Intent i= new Intent(this, Winner.class);
+                i.putExtra("which","difficult");
+                i.putExtra("who","red");
+                i.putExtra("turn",turn);
+                this.startActivity(i);
             }
         }
-    }
+    }//isWon END
 
 
     private void display(String msg){

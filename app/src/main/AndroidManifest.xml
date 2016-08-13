@@ -25,6 +25,10 @@
         </activity>
         <activity android:name=".About">
         </activity>
+        <activity android:name=".Instruction">
+        </activity>
+        <activity android:name=".Winner">
+        </activity>
     </application>
 
 </manifest>

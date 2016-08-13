@@ -7,6 +7,8 @@
 
     <dimen name="titlePad">5dp</dimen>
 
+    <dimen name="titleMar">3dp</dimen>
+
     <dimen name="blockWid">24dp</dimen>
 
     <dimen name="blockHei">24dp</dimen>
