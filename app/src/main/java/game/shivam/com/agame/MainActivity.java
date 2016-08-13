@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void newGame(View view){
-        Intent i= new Intent(this, NewGame.class);
+        Intent i= new Intent(this, GameCat.class);
         this.startActivity(i);
     }
 
     public void howToPlay(View view){
-        Intent i= new Intent(this, NewGame.class);
+        Intent i= new Intent(this, GameCat.class);
         this.startActivity(i);
     }
 

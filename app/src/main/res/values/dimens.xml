@@ -15,6 +15,22 @@
 
     <dimen name="blockPad">3dp</dimen>
 
+    <dimen name="eblockWid">34dp</dimen>
+
+    <dimen name="eblockHei">34dp</dimen>
+
+    <dimen name="eblockMar">5dp</dimen>
+
+    <dimen name="eblockPad">5dp</dimen>
+
+    <dimen name="mblockWid">29dp</dimen>
+
+    <dimen name="mblockHei">29dp</dimen>
+
+    <dimen name="mblockMar">3dp</dimen>
+
+    <dimen name="mblockPad">4dp</dimen>
+
     <dimen name="bfont">20dp</dimen>
 
     <dimen name="bMgn">10dp</dimen>

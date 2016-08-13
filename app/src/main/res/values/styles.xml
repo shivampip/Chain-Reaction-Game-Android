@@ -32,6 +32,24 @@
         <item name="android:layout_margin">@dimen/blockMar</item>
     </style>
 
+    <style name="block_easy">
+        <item name="android:layout_height">@dimen/eblockHei</item>
+        <item name="android:layout_width">@dimen/eblockWid</item>
+        <item name="android:background">@color/blockBack</item>
+        <item name="android:padding">@dimen/eblockPad</item>
+        <item name="android:layout_margin">@dimen/eblockMar</item>
+    </style>
+
+    <style name="block_medium">
+        <item name="android:layout_height">@dimen/mblockHei</item>
+        <item name="android:layout_width">@dimen/mblockWid</item>
+        <item name="android:background">@color/blockBack</item>
+        <item name="android:padding">@dimen/mblockPad</item>
+        <item name="android:layout_margin">@dimen/mblockMar</item>
+    </style>
+
+
+
     <style name="text">
         <item name="android:textSize">@dimen/text</item>
         <item name="android:textColor">@color/text</item>

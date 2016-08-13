@@ -17,6 +17,12 @@
         </activity>
         <activity android:name=".NewGame">
         </activity>
+        <activity android:name=".GameCat">
+        </activity>
+        <activity android:name=".EasyGame">
+        </activity>
+        <activity android:name=".MediumGame">
+        </activity>
     </application>
 
 </manifest>
