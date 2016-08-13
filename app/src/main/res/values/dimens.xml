@@ -7,7 +7,7 @@
 
     <dimen name="titlePad">5dp</dimen>
 
-    <dimen name="titleMar">3dp</dimen>
+    <dimen name="titleMar">5dp</dimen>
 
     <dimen name="blockWid">24dp</dimen>
 
@@ -35,7 +35,7 @@
 
     <dimen name="bfont">15dp</dimen>
 
-    <dimen name="bMgn">10dp</dimen>
+    <dimen name="bMgn">5dp</dimen>
 
     <dimen name="bPad">5dp</dimen>
 

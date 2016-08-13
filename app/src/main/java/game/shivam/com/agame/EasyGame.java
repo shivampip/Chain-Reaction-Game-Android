@@ -227,6 +227,7 @@ public class EasyGame extends AppCompatActivity implements View.OnClickListener{
             if(gWon){
                 display("Green Won");
                 Intent i= new Intent(this, Winner.class);
+                i.putExtra("which","easy");
                 i.putExtra("who","green");
                 i.putExtra("turn",turn);
                 this.startActivity(i);

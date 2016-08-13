@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Winner extends AppCompatActivity {
 
@@ -32,21 +33,23 @@ public class Winner extends AppCompatActivity {
 
 
     public void playAgain(View view){
-        Intent i;
-        switch (which){
-            case "easy":
-                i= new Intent(this, EasyGame.class);
-                this.startActivity(i);
-                break;
-            case "medium":
-                i= new Intent(this, MediumGame.class);
-                this.startActivity(i);
-                break;
-            case "difficult":
-                i= new Intent(this, NewGame.class);
-                this.startActivity(i);
-                break;
-        }
+        try {
+            Intent i;
+            switch (which) {
+                case "easy":
+                    i = new Intent(this, EasyGame.class);
+                    this.startActivity(i);
+                    break;
+                case "medium":
+                    i = new Intent(this, MediumGame.class);
+                    this.startActivity(i);
+                    break;
+                case "difficult":
+                    i = new Intent(this, NewGame.class);
+                    this.startActivity(i);
+                    break;
+            }
+        }catch (Exception e){display(which+" ree"+e+"");}
     }
 
     public void backToMenu(View view){
@@ -58,6 +61,13 @@ public class Winner extends AppCompatActivity {
 
 
 
+
+
+
+
+    private void display(String msg){
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+    }
 
 
 

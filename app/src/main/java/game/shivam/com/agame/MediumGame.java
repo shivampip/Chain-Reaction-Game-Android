@@ -259,6 +259,7 @@ public class MediumGame extends AppCompatActivity implements View.OnClickListene
             if(gWon){
                 display("Green Won");
                 Intent i= new Intent(this, Winner.class);
+                i.putExtra("which","medium");
                 i.putExtra("who","green");
                 i.putExtra("turn",turn);
                 this.startActivity(i);
