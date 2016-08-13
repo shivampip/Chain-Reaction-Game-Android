@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">A Game</string>
+
+    <string name="instruction">
+        It is a very simple game.\n
+        Just click on and dot it will split into four dots and will make neghourhood four dots
+        with same color.
+    </string>
+
+
+</resources>

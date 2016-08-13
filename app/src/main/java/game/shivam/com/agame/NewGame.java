@@ -1,0 +1,251 @@
+package game.shivam.com.agame;
+
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class NewGame extends AppCompatActivity implements View.OnClickListener{
+
+    int number=10;
+    Button a[][]=new Button[number][number];
+    int aa[][]=new int[number][number];
+    char bb[][]=new char[number][number];
+
+    Resources rs;
+    int dcol;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_new_game);
+
+        rs= this.getResources();
+        dcol= rs.getColor(R.color.blockBack);
+
+
+        a[0][0]= (Button) findViewById(R.id.a1);
+        a[0][1]= (Button) findViewById(R.id.a2);
+        a[0][2]= (Button) findViewById(R.id.a3);
+        a[0][3]= (Button) findViewById(R.id.a4);
+        a[0][4]= (Button) findViewById(R.id.a5);
+        a[0][5]= (Button) findViewById(R.id.a6);
+        a[0][6]= (Button) findViewById(R.id.a7);
+        a[0][7]= (Button) findViewById(R.id.a8);
+        a[0][8]= (Button) findViewById(R.id.a9);
+        a[0][9]= (Button) findViewById(R.id.a10);
+
+
+        a[1][0]= (Button) findViewById(R.id.b1);
+        a[1][1]= (Button) findViewById(R.id.b2);
+        a[1][2]= (Button) findViewById(R.id.b3);
+        a[1][3]= (Button) findViewById(R.id.b4);
+        a[1][4]= (Button) findViewById(R.id.b5);
+        a[1][5]= (Button) findViewById(R.id.b6);
+        a[1][6]= (Button) findViewById(R.id.b7);
+        a[1][7]= (Button) findViewById(R.id.b8);
+        a[1][8]= (Button) findViewById(R.id.b9);
+        a[1][9]= (Button) findViewById(R.id.b10);
+
+        a[2][0]= (Button) findViewById(R.id.c1);
+        a[2][1]= (Button) findViewById(R.id.c2);
+        a[2][2]= (Button) findViewById(R.id.c3);
+        a[2][3]= (Button) findViewById(R.id.c4);
+        a[2][4]= (Button) findViewById(R.id.c5);
+        a[2][5]= (Button) findViewById(R.id.c6);
+        a[2][6]= (Button) findViewById(R.id.c7);
+        a[2][7]= (Button) findViewById(R.id.c8);
+        a[2][8]= (Button) findViewById(R.id.c9);
+        a[2][9]= (Button) findViewById(R.id.c10);
+
+        a[3][0]= (Button) findViewById(R.id.d1);
+        a[3][1]= (Button) findViewById(R.id.d2);
+        a[3][2]= (Button) findViewById(R.id.d3);
+        a[3][3]= (Button) findViewById(R.id.d4);
+        a[3][4]= (Button) findViewById(R.id.d5);
+        a[3][5]= (Button) findViewById(R.id.d6);
+        a[3][6]= (Button) findViewById(R.id.d7);
+        a[3][7]= (Button) findViewById(R.id.d8);
+        a[3][8]= (Button) findViewById(R.id.d9);
+        a[3][9]= (Button) findViewById(R.id.d10);
+
+        a[4][0]= (Button) findViewById(R.id.e1);
+        a[4][1]= (Button) findViewById(R.id.e2);
+        a[4][2]= (Button) findViewById(R.id.e3);
+        a[4][3]= (Button) findViewById(R.id.e4);
+        a[4][4]= (Button) findViewById(R.id.e5);
+        a[4][5]= (Button) findViewById(R.id.e6);
+        a[4][6]= (Button) findViewById(R.id.e7);
+        a[4][7]= (Button) findViewById(R.id.e8);
+        a[4][8]= (Button) findViewById(R.id.e9);
+        a[4][9]= (Button) findViewById(R.id.e10);
+
+        a[5][0]= (Button) findViewById(R.id.f1);
+        a[5][1]= (Button) findViewById(R.id.f2);
+        a[5][2]= (Button) findViewById(R.id.f3);
+        a[5][3]= (Button) findViewById(R.id.f4);
+        a[5][4]= (Button) findViewById(R.id.f5);
+        a[5][5]= (Button) findViewById(R.id.f6);
+        a[5][6]= (Button) findViewById(R.id.f7);
+        a[5][7]= (Button) findViewById(R.id.f8);
+        a[5][8]= (Button) findViewById(R.id.f9);
+        a[5][9]= (Button) findViewById(R.id.f10);
+
+        a[6][0]= (Button) findViewById(R.id.g1);
+        a[6][1]= (Button) findViewById(R.id.g2);
+        a[6][2]= (Button) findViewById(R.id.g3);
+        a[6][3]= (Button) findViewById(R.id.g4);
+        a[6][4]= (Button) findViewById(R.id.g5);
+        a[6][5]= (Button) findViewById(R.id.g6);
+        a[6][6]= (Button) findViewById(R.id.g7);
+        a[6][7]= (Button) findViewById(R.id.g8);
+        a[6][8]= (Button) findViewById(R.id.g9);
+        a[6][9]= (Button) findViewById(R.id.g10);
+
+        a[7][0]= (Button) findViewById(R.id.h1);
+        a[7][1]= (Button) findViewById(R.id.h2);
+        a[7][2]= (Button) findViewById(R.id.h3);
+        a[7][3]= (Button) findViewById(R.id.h4);
+        a[7][4]= (Button) findViewById(R.id.h5);
+        a[7][5]= (Button) findViewById(R.id.h6);
+        a[7][6]= (Button) findViewById(R.id.h7);
+        a[7][7]= (Button) findViewById(R.id.h8);
+        a[7][8]= (Button) findViewById(R.id.h9);
+        a[7][9]= (Button) findViewById(R.id.h10);
+
+        a[8][0]= (Button) findViewById(R.id.i1);
+        a[8][1]= (Button) findViewById(R.id.i2);
+        a[8][2]= (Button) findViewById(R.id.i3);
+        a[8][3]= (Button) findViewById(R.id.i4);
+        a[8][4]= (Button) findViewById(R.id.i5);
+        a[8][5]= (Button) findViewById(R.id.i6);
+        a[8][6]= (Button) findViewById(R.id.i7);
+        a[8][7]= (Button) findViewById(R.id.i8);
+        a[8][8]= (Button) findViewById(R.id.i9);
+        a[8][9]= (Button) findViewById(R.id.i10);
+
+        a[9][0]= (Button) findViewById(R.id.j1);
+        a[9][1]= (Button) findViewById(R.id.j2);
+        a[9][2]= (Button) findViewById(R.id.j3);
+        a[9][3]= (Button) findViewById(R.id.j4);
+        a[9][4]= (Button) findViewById(R.id.j5);
+        a[9][5]= (Button) findViewById(R.id.j6);
+        a[9][6]= (Button) findViewById(R.id.j7);
+        a[9][7]= (Button) findViewById(R.id.j8);
+        a[9][8]= (Button) findViewById(R.id.j9);
+        a[9][9]= (Button) findViewById(R.id.j10);
+
+        a[0][0].setOnClickListener(this);
+        for(int y=0;y<number;y++){
+            for(int z=0;z<number;z++){
+                a[y][z].setOnClickListener(this);
+                aa[y][z]=0;
+                bb[y][z]='n';
+            }
+        }
+
+
+
+
+    }
+
+
+    char fsource='g';
+
+    @Override
+    public void onClick(View view) {
+        Button b= (Button) view;
+
+        for(int i=0;i<number;i++){
+            for(int k=0;k<number;k++){
+                if(b==a[i][k]){
+                    try{
+                        chal(i,k,fsource,false);
+                        fsource=(fsource=='g')?'r':'g';
+                    }catch (Exception e){display(e+"");}
+                }
+            }
+        }
+    }
+
+    //a=button
+    //aa=number
+    //bb=char
+
+    private void chal(int i,int j,char source,boolean isRec) throws Exception{
+
+
+        if(!isRec){
+            if(bb[i][j]=='n'){
+                aa[i][j]=1;
+                bb[i][j]=source;
+                a[i][j].setText(aa[i][j]+"");
+                int bcol= (source=='g')?Color.GREEN:Color.RED;
+                a[i][j].setBackgroundColor(bcol);
+            }
+            else {
+                if(bb[i][j]!=source){
+                    display("Invalid move");
+                }
+                else {
+                    if(aa[i][j]<3){
+                        aa[i][j]+=1;
+                        a[i][j].setText(aa[i][j]+"");
+                    }
+                    else {
+                        aa[i][j]=0;
+                        bb[i][j]='n';
+                        a[i][j].setText("");
+                        a[i][j].setBackgroundColor(dcol);
+                        try{chal(i-1,j,source,true);}catch (Exception e){}
+                        try{chal(i+1,j,source,true);}catch (Exception e){}
+                        try{chal(i,j-1,source,true);}catch (Exception e){}
+                        try{chal(i,j+1,source,true);}catch (Exception e){}
+                    }
+                }
+            }
+        }
+        else {//if isRes==true
+            if(bb[i][j]=='n'){
+                aa[i][j]=1;
+                bb[i][j]=source;
+                a[i][j].setText(aa[i][j]+"");
+                int bcol= (source=='g')?Color.GREEN:Color.RED;
+                a[i][j].setBackgroundColor(bcol);
+            }
+            else {
+                bb[i][j]=source;
+                if(aa[i][j]<3){
+                    aa[i][j]+=1;
+                    a[i][j].setText(aa[i][j]+"");
+                    int bcol=(source=='g')?Color.GREEN:Color.RED;
+                    a[i][j].setBackgroundColor(bcol);
+                }
+                else {
+                    aa[i][j]=0;
+                    bb[i][j]='n';
+                    a[i][j].setText("");
+                    a[i][j].setBackgroundColor(dcol);
+                    try{chal(i-1,j,source,true);}catch (Exception e){}
+                    try{chal(i+1,j,source,true);}catch (Exception e){}
+                    try{chal(i,j-1,source,true);}catch (Exception e){}
+                    try{chal(i,j+1,source,true);}catch (Exception e){}
+                }
+            }
+        }
+
+
+
+    }//chal END
+
+
+
+
+    private void display(String msg){
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+    }
+
+}//class END

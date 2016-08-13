@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">@dimen/title</item>
+        <item name="android:background">@color/titleBack</item>
+        <item name="android:textColor">@color/title</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/titlePad</item>
+    </style>
+
+    <style name="button">
+        <item name="android:textSize">@dimen/bfont</item>
+        <item name="android:background">@color/bBack</item>
+        <item name="android:textColor">@color/bfont</item>
+        <item name="android:layout_margin">@dimen/bMgn</item>
+        <item name="android:padding">@dimen/bPad</item>
+    </style>
+
+    <style name="block">
+        <item name="android:layout_height">@dimen/blockHei</item>
+        <item name="android:layout_width">@dimen/blockWid</item>
+        <item name="android:background">@color/blockBack</item>
+        <item name="android:padding">@dimen/blockPad</item>
+        <item name="android:layout_margin">@dimen/blockMar</item>
+    </style>
+
+    <style name="text">
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:padding">@dimen/textPad</item>
+    </style>
+    
+
+
+</resources>

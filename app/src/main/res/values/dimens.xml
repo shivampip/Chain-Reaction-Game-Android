@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="title">25dp</dimen>
+
+    <dimen name="titlePad">5dp</dimen>
+
+    <dimen name="blockWid">30dp</dimen>
+
+    <dimen name="blockHei">30dp</dimen>
+
+    <dimen name="blockMar">2dp</dimen>
+
+    <dimen name="blockPad">5dp</dimen>
+
+    <dimen name="bfont">20dp</dimen>
+
+    <dimen name="bMgn">10dp</dimen>
+
+    <dimen name="bPad">5dp</dimen>
+
+    <dimen name="text">15dp</dimen>
+
+    <dimen name="textPad">10dp</dimen>
+
+</resources>
