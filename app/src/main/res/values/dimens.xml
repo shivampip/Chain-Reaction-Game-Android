@@ -7,13 +7,13 @@
 
     <dimen name="titlePad">5dp</dimen>
 
-    <dimen name="blockWid">30dp</dimen>
+    <dimen name="blockWid">24dp</dimen>
 
-    <dimen name="blockHei">30dp</dimen>
+    <dimen name="blockHei">24dp</dimen>
 
     <dimen name="blockMar">2dp</dimen>
 
-    <dimen name="blockPad">5dp</dimen>
+    <dimen name="blockPad">3dp</dimen>
 
     <dimen name="bfont">20dp</dimen>
 
