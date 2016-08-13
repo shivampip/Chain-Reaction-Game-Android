@@ -174,9 +174,17 @@ public class NewGame extends AppCompatActivity implements View.OnClickListener{
     //a=button
     //aa=number
     //bb=char
+    //pos= 3(Center), 2(Edge), 1(Corner)
 
     private void chal(int i,int j,char source,boolean isRec) throws Exception{
 
+        int pos=3;
+        if((i==0&&j==0)||(i==number-1&&j==number-1)||(i==0&&j==number-1)||(i==number-1&&j==0)){
+            pos=1;
+        }
+        else if (i==0||i==number-1||j==0||j==number-1){
+            pos=2;
+        }
 
         if(!isRec){
             if(bb[i][j]=='n'){
@@ -191,7 +199,7 @@ public class NewGame extends AppCompatActivity implements View.OnClickListener{
                     display("Invalid move");
                 }
                 else {
-                    if(aa[i][j]<3){
+                    if(aa[i][j]<pos){
                         aa[i][j]+=1;
                         a[i][j].setText(aa[i][j]+"");
                     }
@@ -218,7 +226,7 @@ public class NewGame extends AppCompatActivity implements View.OnClickListener{
             }
             else {
                 bb[i][j]=source;
-                if(aa[i][j]<3){
+                if(aa[i][j]<pos){
                     aa[i][j]+=1;
                     a[i][j].setText(aa[i][j]+"");
                     int bcol=(source=='g')?Color.GREEN:Color.RED;
