@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class GameCat extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener{
 
-    String level=null;
+    String level="medium";
     RadioGroup rg;
 
     @Override

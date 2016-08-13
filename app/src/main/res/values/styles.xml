@@ -52,7 +52,8 @@
 
     <style name="text">
         <item name="android:textSize">@dimen/text</item>
-        <item name="android:textColor">@color/text</item>
+        <item name="android:background">@color/textBack</item>
+        <item name="android:textColor">@color/textFor</item>
         <item name="android:padding">@dimen/textPad</item>
     </style>
     

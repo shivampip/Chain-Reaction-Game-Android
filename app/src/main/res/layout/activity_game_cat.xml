@@ -36,14 +36,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Easy"
-                android:id="@+id/easy"
-                android:checked="true"/>
+                android:id="@+id/easy"/>
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Medium"
-                android:id="@+id/medium"/>
+                android:id="@+id/medium"
+                android:checked="true"/>
 
             <RadioButton
                 android:layout_width="match_parent"

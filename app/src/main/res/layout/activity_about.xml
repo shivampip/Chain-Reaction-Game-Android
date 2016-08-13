@@ -29,10 +29,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text"
-            android:padding="@dimen/textPad"
-            android:background="@color/textBack"
-            android:textColor="@color/textFor"
+            style="@style/text"
             android:text="@string/about"/>
 
     </LinearLayout>
