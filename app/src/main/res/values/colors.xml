@@ -8,7 +8,9 @@
 
     <color name="titleBack">#C0C0C0</color>
 
-    <color name="text">#008080</color>
+    <color name="textBack">#008080</color>
+
+    <color name="textFor">#f9f9f9</color>
 
     <color name="bfont">#FFFFFF</color>
 

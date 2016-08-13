@@ -31,7 +31,7 @@
 
     <dimen name="mblockPad">4dp</dimen>
 
-    <dimen name="bfont">20dp</dimen>
+    <dimen name="bfont">15dp</dimen>
 
     <dimen name="bMgn">10dp</dimen>
 
