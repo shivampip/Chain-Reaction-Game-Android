@@ -197,6 +197,7 @@ public class NewGame extends AppCompatActivity implements View.OnClickListener{
             else {
                 if(bb[i][j]!=source){
                     display("Invalid move");
+                    fsource=(fsource=='g')?'r':'g';
                 }
                 else {
                     if(aa[i][j]<pos){
